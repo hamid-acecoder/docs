@@ -566,8 +566,8 @@ Attribute Matching Types
 
     Checks to see if all the values in the array are numeric::
 
-        $data = ['one'];
-        $res = Hash::numeric(array_keys($data));
+        $data = [0 => 1 , 1 => 5,"test" => 7];
+        $res = Hash::numeric($data);
         // $res is true
 
         $data = [1 => 'one'];
